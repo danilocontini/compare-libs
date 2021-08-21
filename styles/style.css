@@ -1,0 +1,115 @@
+.button-open-compare-modal {
+  background-color: #000;
+  border: 1px solid #FFFFFF;
+  color: #FFFFFF;
+  display: flex;
+  padding: 8px 16px;
+  cursor: pointer;
+  margin: 0 16px;
+}
+.button-close-compare-modal {
+  border: 1px solid rgba(0,0,0,0.5);
+  color: #000000;
+  border-radius: 50px;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  position: sticky;
+  top: -5px;
+  left: calc(100% - 24px);
+}
+h1.modal-title {
+  margin: 0 auto;
+  font-weight: lighter;
+}
+.backdrop-modal-compare *::-webkit-scrollbar:horizontal {
+  height: 6px;
+}
+.backdrop-modal-compare *::-webkit-scrollbar {
+  width: 8px;
+}
+.backdrop-modal-compare *::-webkit-scrollbar-track:vertical,
+.backdrop-modal-compare *::-webkit-scrollbar-track  {
+  -webkit-box-shadow: inset 0 0 2px rgba(0,0,0,0.2);
+  box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+.backdrop-modal-compare *::-webkit-scrollbar-thumb:vertical,
+.backdrop-modal-compare *::-webkit-scrollbar-thumb  {
+  border-radius: 10px;
+  background-color: rgba(0,0,0,0.7);
+}
+.backdrop-modal-compare {
+  position: absolute;
+  background-color: rgba(0,0,0,0.7);
+  width: 100vw;
+  height: 100vh;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal-compare {
+  width: 90vw;
+  height: 90vh;
+  color: #000000;
+  background-color: #FFFFFF;
+  border: 2px solid #FFFFFF;
+  border-radius: 4px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  overflow-x: auto;
+  padding: 16px;
+  padding-top: 24px;
+}
+.table-compare {
+  margin: 16px auto 24px;
+  font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+  width: 90%;
+  box-shadow: 0 2px 5px rgb(0 0 0 / 30%);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.table-compare .table-header {
+  background-color: rgba(0,0,0,0.05)
+}
+.table-compare [class^='tr-content-']:nth-child(odd) {
+  background-color: rgba(0,0,0,0.05);
+}
+.table-compare [class^='tr-content-'] {
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+.table-compare th,
+.table-compare [class^='tr-content-'] td {
+  text-align: left;
+  padding: 16px 24px;
+}
+.table-compare .table-title td {
+  font-size: 20pt;
+  font-weight: lighter;
+  background-color: rgba(0,0,0,0.15);
+  padding: 16px 24px;
+}
+td.td-param,
+td.td-env,
+td.td-value {
+  line-height: 24px;
+  white-space: nowrap;
+  overflow-x: auto;
+}
+td.td-param {
+  min-width: 300px;
+  max-width: 300px;
+}
+td.td-env {
+}
+td.td-value {
+  min-width: 500px;
+  max-width: 500px;
+}
