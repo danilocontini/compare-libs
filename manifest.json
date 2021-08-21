@@ -3,13 +3,12 @@
   "name": "Alelo Libs",
   "version": "1.0",
   "description": "Compare env libs",
-  "permissions": ["activeTab", "declarativeContent", "scripting", "storage", "tabs"],
+  "permissions": ["activeTab", "scripting", "tabs"],
   "host_permissions": [ "https://dev.azure.com/alelo/*" ],
   "background": {
     "service_worker": "background.js"
   },
   "action": {
-    "default_popup": "views/index.html",
     "default_icon": {
       "16": "images/icon.png",
       "32": "images/icon.png",
