@@ -7,9 +7,7 @@ chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
       chrome.scripting.executeScript({
         target: { tabId: tabId },
         files: ["./script.js"]
-      }).then(() => {
-        console.log("INJECTED THE FOREGROUND SCRIPT.");
-      });
+      })
     }).catch(err => console.log(err));
   }
 });
