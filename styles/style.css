@@ -4,7 +4,7 @@
   color: #FFFFFF;
   display: flex;
   padding: 8px 16px;
-  cursor: pointer;
+  cursor: pointer!important;
   margin: 0 16px;
 }
 .button-close-compare-modal {
@@ -13,7 +13,7 @@
   border-radius: 50px;
   width: 24px;
   height: 24px;
-  cursor: pointer;
+  cursor: pointer!important;
   display: flex;
   justify-content: center;
   align-items: center;

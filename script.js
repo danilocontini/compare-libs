@@ -117,10 +117,8 @@ const toSnakeCase = str =>
                   row.appendChild(tdEnv) +
                   row.appendChild(tdValue) +
                   table.appendChild(row)
-            })
-            [$](d) +
-          modalContent.appendChild(table) +
-          d
+            })+
+          modalContent.appendChild(table)
         }
       )
     })
