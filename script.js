@@ -128,4 +128,4 @@ const toSnakeCase = str =>
       modalTitle.innerText = s;
       modalContent.insertBefore(modalTitle, modalContent.children[1]);
     });
-})({ URL: `/alelo/${JSON.parse(document.getElementById("dataProviders").text).data['ms.vss-tfs-web.page-data'].project.id}/_apis/distributedtask/variablegroups`, Title: `Valores de ${new Date().getDay()}/${["jan", "fev", "mar", "abr", "mai", "jun", "jul", "ago", "set", "out", "nov", "dez"][new Date().getMonth()]}`, MSs: [] });
+})({ URL: `/alelo/${JSON.parse(document.getElementById("dataProviders").text).data['ms.vss-tfs-web.page-data'].project.id}/_apis/distributedtask/variablegroups`, Title: `Valores de ${new Date().getDate()}/${["jan", "fev", "mar", "abr", "mai", "jun", "jul", "ago", "set", "out", "nov", "dez"][new Date().getMonth()]}`, MSs: [] });
