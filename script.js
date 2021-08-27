@@ -11,7 +11,7 @@ backdropModal.classList.add('backdrop-modal-compare')
 buttonOpenModal.addEventListener('click', () => document.querySelector('body').appendChild(backdropModal));
 const buttonCloseModal = document.createElement('div');
 buttonCloseModal.classList.add('button-close-compare-modal')
-buttonCloseModal.innerHTML = 'x';
+buttonCloseModal.innerHTML = '&#x2715';
 buttonCloseModal.addEventListener('click', () => document.querySelector('.backdrop-modal-compare').remove());
 
 const modalContent = document.createElement('div');

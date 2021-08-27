@@ -10,6 +10,7 @@
 .button-close-compare-modal {
   border: 1px solid rgba(0,0,0,0.5);
   color: #000000;
+  background-color: #FFFFFF;
   border-radius: 50px;
   width: 24px;
   height: 24px;
@@ -21,6 +22,18 @@
   position: sticky;
   top: -5px;
   left: calc(100% - 24px);
+  animation: 3s linear 0s infinite close;
+}
+@keyframes close {
+  0% {
+    transform: scale(1,1);
+  }
+  50% {
+    transform: scale(1.2,1.2);
+  }
+  100% {
+    transform: scale(1,1);
+  }
 }
 h1.modal-title {
   margin: 0 auto;
@@ -54,8 +67,8 @@ h1.modal-title {
   align-items: center;
 }
 .modal-compare {
-  width: 90vw;
-  height: 90vh;
+  width: 95vw;
+  height: 95vh;
   color: #000000;
   background-color: #FFFFFF;
   border: 2px solid #FFFFFF;
@@ -71,7 +84,7 @@ h1.modal-title {
 .table-compare {
   margin: 16px auto 24px;
   font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
-  width: 90%;
+  width: 100%;
   box-shadow: 0 2px 5px rgb(0 0 0 / 30%);
   border-radius: 8px;
   overflow: hidden;
